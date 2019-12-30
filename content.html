@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sepakbola Terkini">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <meta name="theme-color" content="#4dd0e1">
+    <link rel="manifest" href="manifest.json">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/idb.js"></script>
+    <script src="js/idbController.js"></script>
+    <title>NexFootball</title>
+</head>
+
+<body>
+    <div class=" navbar-fixed">
+        <nav class="cyan lighten-2">
+            <div class="nav-wrapper container">
+                <a href="./index.html" class="ikon brand-logo" id="logo-container"><img src="img/logo.png" alt=""
+                        height="62px"></a>
+                <a href="./index.html" class="sidenav-trigger" data-target="nav-mobile"><i
+                        class=" material-icons">arrow_back</i>
+                </a>
+
+                <ul class="topnav right hide-on-med-and-down">
+                    <a href="./index.html"><i class="material-icons">home</i></a>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container" id="body-content"></div>
+
+    <footer class="page-footer grey darken-4" id="footer"></footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/api.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            loadFooter();
+            loadPage();
+            getAllStandings();
+            getAllMatch();
+        });
+    </script>
+</body>
+
+</html>
